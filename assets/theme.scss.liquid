@@ -1,0 +1,138 @@
+.main_banner {
+  @media(max-width:425px){
+    padding-bottom:0;
+  }
+  display:block;
+  .half_sec{
+    .half_sec_out{
+      display: flex;
+      align-items: center;
+      @media(max-width:768px){
+      	flex-wrap:wrap;
+      }
+      .img_out{
+        width:50%;
+        flex:0 0 50%;
+        @media(max-width:768px){
+          width:100%;
+          flex:0 0 100%;
+          margin-bottom: 40px;
+        }
+        @media(max-width:425px){
+          margin-bottom: 20px;
+        }
+      }
+      .text_sect{
+        width: 50%;
+        flex: 0 0 50%;
+        padding: 0 60px;
+        @media(max-width:768px){
+          width:100%;
+          flex:0 0 100%;
+        }
+        @media(max-width:425px){
+          padding:0 20px;
+        }
+      }
+    }
+  }
+}
+.site-header{
+  .grid__item{
+    .site-header__logo{
+      .site-header__logo-image{
+        background-color: #fff !important;
+      }
+    }
+  }
+}
+#ProductSection-product-template{
+  .product-single--medium-media{
+    .product-single__media-group{
+      width:65%;
+      @media(max-width:768px){
+      	width:50%;
+      }
+      @media(max-width:425px){
+        width:100%;
+      }
+    }
+    .product_descrip{
+      width:35%;
+      @media(max-width:768px){
+        width:50%;
+      }
+      @media(max-width:425px){
+        width:100%;
+      }
+    }
+  }
+}
+.accordion{
+  .accordion-header{
+    padding:10px 20px;
+    border-bottom: 1px solid #000;
+    cursor:pointer;
+    position:relative;
+    padding-left:0;
+    text-transform:uppercase;
+    &:after{
+      content: '';
+      width: 10px;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      background: #000;
+      transform: translateY(-50%);
+    }
+    &:before{
+      content: '';
+      width: 1px;
+      height: 10px;
+      position: absolute;
+      top: 50%;
+      right: 14px;
+      background: #000;
+      transform: translateY(-50%);
+    }
+    &.active{
+      &:before{
+      	display:none;
+      }
+    }
+  }
+  .accordion-content{
+    display:none;
+    padding:10px;
+    .image_tex{
+      display: flex;
+      align-items: center;
+      .icon_img{
+        width: 100%;
+        max-width: 70px;
+        border-radius: 50%;
+        padding-right: 20px;
+        img{
+          width:100%;
+          height:auto;
+          object-fit:cover;
+          object-position:center;
+        }
+      }
+    }
+  }
+}
+.product-form__controls-group--submit{
+  .product-form__cart-submit{
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    opacity: 1;
+    &:hover{
+      background:transparent;
+      color:#000;
+      opacity: 1;
+    }
+  }
+}
